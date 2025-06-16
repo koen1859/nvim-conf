@@ -1,5 +1,5 @@
 {
-  description = "A very basic flake";
+  description = "Neovim Configuration Flake with NVF";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
