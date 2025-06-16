@@ -30,7 +30,7 @@
         };
         pyright = {
           enable = true;
-          cmd = [(lib.getExe pkgs.pyright) "--stdio"];
+          cmd = ["${pkgs.pyright}/bin/pyright" "--stdio"];
           filetypes = ["python"];
         };
         ruff = {
