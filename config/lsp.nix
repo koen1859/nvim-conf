@@ -30,7 +30,7 @@
         };
         pyright = {
           enable = true;
-          cmd = ["${pkgs.pyright}/bin/pyright" "--stdio"];
+          cmd = ["${pkgs.pyright}/bin/pyright-langserver" "--stdio"];
           filetypes = ["python"];
         };
         ruff = {
