@@ -13,14 +13,15 @@
     nixpkgs,
     nvf,
     ...
-  }: let
-    system = "x86_64-linux";
-    pkgs = nixpkgs.legacyPackages.${system};
-  in {
-    packages.${system}.default =
-      (nvf.lib.neovimConfiguration {
-        inherit pkgs;
-        modules = [./config];
-      }).neovim;
+  }: {
+    packages = nixpkgs.lib.genAttrs ["x86_64-linux" "aarch64-linux"] (system: let
+      pkgs = nixpkgs.legacyPackages.${system};
+    in {
+      default =
+        (nvf.lib.neovimConfiguration {
+          inherit pkgs;
+          modules = [./config];
+        }).neovim;
+    });
   };
 }
