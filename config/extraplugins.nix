@@ -20,6 +20,10 @@
         package = pkgs.vimPlugins.neoscroll-nvim;
         setup = "require('neoscroll').setup {}";
       };
+      toggleterm = {
+        package = pkgs.vimPlugins.toggleterm-nvim;
+        setup = "require('toggleterm').setup {}";
+      };
     };
   };
 }
