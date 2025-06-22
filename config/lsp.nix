@@ -60,6 +60,11 @@
           cmd = [(lib.getExe pkgs.phpactor) "language-server"];
           filetypes = ["php"];
         };
+        typescript-language-server = {
+          enable = true;
+          cmd = [(lib.getExe pkgs.typescript-language-server) "--stdio"];
+          filetypes = ["typescript" "ts" "tsx"];
+        };
       };
     };
 
@@ -109,7 +114,10 @@
         enable = true;
         lsp.enable = false;
       };
-      ts.enable = true;
+      ts = {
+        enable = true;
+        lsp.enable = false;
+      };
     };
   };
 }
