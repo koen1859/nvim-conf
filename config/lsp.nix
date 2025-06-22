@@ -63,7 +63,7 @@
         typescript-language-server = {
           enable = true;
           cmd = [(lib.getExe pkgs.typescript-language-server) "--stdio"];
-          filetypes = ["typescript" "ts" "tsx"];
+          filetypes = ["typescript"];
         };
       };
     };
