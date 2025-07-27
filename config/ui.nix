@@ -4,7 +4,7 @@
       enable = true;
       name = "gruvbox";
       style = "dark";
-      transparent = false;
+      transparent = true;
     };
     dashboard.startify = {
       enable = true;
