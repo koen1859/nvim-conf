@@ -8,10 +8,10 @@
       base16-nvim
     ];
     extraPlugins = {
-      compiler = {
-        package = pkgs.vimPlugins.compiler-nvim;
-        setup = "require('compiler').setup {}";
-      };
+      # compiler = {
+      #   package = pkgs.vimPlugins.compiler-nvim;
+      #   setup = "require('compiler').setup {}";
+      # };
       csvview = {
         package = pkgs.vimPlugins.csvview-nvim;
         setup = "require('csvview').setup {}";
