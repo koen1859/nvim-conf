@@ -35,7 +35,7 @@
           ./home.nix
           nvim-conf.homeModules.default
         ];
-        extraSpecialArgs = {inherit inputs;};
+        programs.nvim-conf.enable = true;
       };
     };
   };
