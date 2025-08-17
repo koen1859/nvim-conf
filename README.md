@@ -33,11 +33,9 @@
         inherit pkgs;
         modules = [
           ./home.nix
+          nvim-conf.homeModules.default
         ];
         extraSpecialArgs = {inherit inputs;};
-        home.packages = [
-          nvim-conf.packages.${pkgs.system}.default
-        ];
       };
     };
   };

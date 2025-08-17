@@ -33,7 +33,10 @@
     };
     filetree.neo-tree.enable = true;
     notify = {
-      nvim-notify.enable = true;
+      nvim-notify = {
+        enable = true;
+        setupOpts.background_colour = "#000000";
+      };
     };
     tabline.nvimBufferline.enable = true;
     treesitter.context.enable = true;
