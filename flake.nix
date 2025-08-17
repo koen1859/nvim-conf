@@ -28,6 +28,6 @@
           modules = [./config];
         }).neovim;
     });
-    homeModules.default = {...} @ args: import ./module.nix (args // {self = self;});
+    homeModules.default = {pkgs, ...} @ args: import ./module.nix (args // {self = self;});
   };
 }
