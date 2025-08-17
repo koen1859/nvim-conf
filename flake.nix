@@ -28,6 +28,6 @@
           modules = [./config];
         }).neovim;
     });
-    homeManagerModules.default = {...} @ args: import ./module.nix (args // {self = self;});
+    homeModules.default = {...} @ args: import ./module.nix (args // {self = self;});
   };
 }
