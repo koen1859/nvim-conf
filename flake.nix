@@ -7,14 +7,19 @@
       url = "github:notashelf/nvf";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    systems.url = "github:nix-systems/default";
   };
 
   outputs = {
+    self,
     nixpkgs,
     nvf,
+    systems,
     ...
-  }: {
-    packages = nixpkgs.lib.genAttrs ["x86_64-linux" "aarch64-linux"] (system: let
+  }: let
+    eachSystem = nixpkgs.lib.genAttrs (import systems);
+  in {
+    packages = eachSystem (system: let
       pkgs = nixpkgs.legacyPackages.${system};
     in {
       default =
@@ -23,5 +28,6 @@
           modules = [./config];
         }).neovim;
     });
+    homeManagerModules.default = {...} @ args: import ./module.nix (args // {self = self;});
   };
 }
