@@ -238,7 +238,7 @@
       {
         key = "<leader><CR>";
         mode = ["n"];
-        action = "<cmd>ToggleTermSendCurrentLine<cr>";
+        action = "<cmd>ToggleTermSendCurrentLine<cr><cr>";
         desc = "Send current line to terminal";
       }
       {
