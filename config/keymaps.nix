@@ -33,25 +33,25 @@
       }
       {
         key = "<C-k>";
-        mode = ["n"];
+        mode = ["n" "t"];
         action = "<cmd>wincmd k<cr>";
         desc = "Navigate Up";
       }
       {
         key = "<C-j>";
-        mode = ["n"];
+        mode = ["n" "t"];
         action = "<cmd>wincmd j<cr>";
         desc = "Navigate Down";
       }
       {
         key = "<C-h>";
-        mode = ["n"];
+        mode = ["n" "t"];
         action = "<cmd>wincmd h<cr>";
         desc = "Navigate Left";
       }
       {
         key = "<C-l>";
-        mode = ["n"];
+        mode = ["n" "t"];
         action = "<cmd>wincmd l<cr>";
         desc = "Navigate Right";
       }
@@ -222,6 +222,30 @@
         mode = ["n"];
         action = "<cmd>CompilerRedo<cr>";
         desc = "Compiler Redo";
+      }
+      {
+        key = "<leader>tp";
+        mode = ["n"];
+        action = "<cmd>lua _PYTHON_TOGGLE()<cr>";
+        desc = "Open Python terminal";
+      }
+      {
+        key = "<leader>tr";
+        mode = ["n"];
+        action = "<cmd>lua _R_TOGGLE()<cr>";
+        desc = "Open R terminal";
+      }
+      {
+        key = "<leader><CR>";
+        mode = ["n"];
+        action = "<cmd>ToggleTermSendCurrentLine<cr>";
+        desc = "Send current line to terminal";
+      }
+      {
+        key = "<cr>";
+        mode = ["v"];
+        action = "<cmd>lua _SEND_VISUAL_LINES()<cr>";
+        desc = "Send visual selection to terminal";
       }
     ];
   };
