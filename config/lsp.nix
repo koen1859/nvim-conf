@@ -38,6 +38,11 @@
           cmd = [(lib.getExe pkgs.ruff) "server"];
           filetypes = ["python"];
         };
+        sqls = {
+          enable = true;
+          cmd = [(lib.getExe pkgs.sqls)];
+          filetypes = ["sql"];
+        };
         # ty = {
         #   enable = true;
         #   cmd = [(lib.getExe pkgs.ty) "server"];
@@ -112,7 +117,10 @@
         enable = true;
         lsp.enable = false;
       };
-      sql.enable = true;
+      sql = {
+        enable = true;
+        lsp.enable = false;
+      };
     };
   };
 }
