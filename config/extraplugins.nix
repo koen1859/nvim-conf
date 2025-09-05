@@ -27,10 +27,6 @@
         package = pkgs.vimPlugins.toggleterm-nvim;
         setup = "require('toggleterm').setup {}";
       };
-      dbee = {
-        package = pkgs.vimPlugins.nvim-dbee;
-        setup = "require('dbee').setup {}";
-      };
     };
     luaConfigRC.toggleterm = ''
       local Terminal = require("toggleterm.terminal").Terminal

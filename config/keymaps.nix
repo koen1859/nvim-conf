@@ -247,6 +247,12 @@
         action = "<cmd>lua _SEND_VISUAL_LINES()<cr>";
         desc = "Send visual selection to terminal";
       }
+      {
+        key = "<leader>db";
+        mode = ["n"];
+        action = "<cmd>DBUIToggle";
+        desc = "Toggle DB UI";
+      }
     ];
   };
 }
