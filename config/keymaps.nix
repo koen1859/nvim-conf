@@ -250,7 +250,7 @@
       {
         key = "<leader>db";
         mode = ["n"];
-        action = "<cmd>DBUIToggle";
+        action = "<cmd>DBUIToggle<cr>";
         desc = "Toggle DB UI";
       }
     ];
