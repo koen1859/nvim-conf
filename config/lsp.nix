@@ -38,6 +38,11 @@
           cmd = [(lib.getExe pkgs.ruff) "server"];
           filetypes = ["python"];
         };
+        # ty = {
+        #   enable = true;
+        #   cmd = [(lib.getExe pkgs.ty) "server"];
+        #   filetypes = ["python"];
+        # };
         r_language_server = {
           enable = true;
           cmd = [
