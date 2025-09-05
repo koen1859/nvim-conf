@@ -28,21 +28,21 @@
           cmd = [(lib.getExe pkgs.nixd)];
           filetypes = ["nix"];
         };
-        # pyright = {
-        #   enable = true;
-        #   cmd = ["${pkgs.pyright}/bin/pyright-langserver" "--stdio"];
-        #   filetypes = ["python"];
-        # };
+        pyright = {
+          enable = true;
+          cmd = ["${pkgs.pyright}/bin/pyright-langserver" "--stdio"];
+          filetypes = ["python"];
+        };
         ruff = {
           enable = true;
           cmd = [(lib.getExe pkgs.ruff) "server"];
           filetypes = ["python"];
         };
-        ty = {
-          enable = true;
-          cmd = [(lib.getExe pkgs.ty) "server"];
-          filetypes = ["python"];
-        };
+        # ty = {
+        #   enable = true;
+        #   cmd = [(lib.getExe pkgs.ty) "server"];
+        #   filetypes = ["python"];
+        # };
         r_language_server = {
           enable = true;
           cmd = [
