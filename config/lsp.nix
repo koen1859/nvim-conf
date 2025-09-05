@@ -112,6 +112,7 @@
         enable = true;
         lsp.enable = false;
       };
+      sql.enable = true;
     };
   };
 }
