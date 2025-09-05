@@ -6,6 +6,9 @@
       harpoon2
       lazygit-nvim
       base16-nvim
+      vim-dadbod
+      vim-dadbod-ui
+      vim-dadbod-completion
     ];
     extraPlugins = {
       compiler = {
