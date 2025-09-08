@@ -16,6 +16,7 @@
       incsearch = true;
       ignorecase = true;
       smartcase = true;
+      cursorline = true;
     };
 
     globals.maplocalleader = "\\";

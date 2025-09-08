@@ -253,6 +253,30 @@
         action = "<cmd>ZenMode<cr>";
         desc = "Toggle Zen mode";
       }
+      {
+        key = "<leader>sv";
+        mode = ["n"];
+        action = "<C-w>v";
+        desc = "Split window vertically";
+      }
+      {
+        key = "<leader>sh";
+        mode = ["n"];
+        action = "<C-w>h";
+        desc = "Split window horizontally";
+      }
+      {
+        key = "<leader>se";
+        mode = ["n"];
+        action = "<C-w>=";
+        desc = "Make splits equal size";
+      }
+      {
+        key = "<leader>sx";
+        mode = ["n"];
+        action = "<cmd>close<cr>";
+        desc = "Close current split";
+      }
     ];
   };
 }
