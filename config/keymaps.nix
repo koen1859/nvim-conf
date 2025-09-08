@@ -64,7 +64,7 @@
       {
         key = "<C-w>";
         mode = ["n"];
-        action = ":Bdelete<CR>";
+        action = ":bdelete<CR>";
         desc = "Close Current Buffer";
       }
       {
