@@ -59,7 +59,7 @@
     };
 
     ui = {
-      noice.enable = true;
+      noice.enable = false;
       colorizer.enable = true;
       illuminate.enable = true;
       breadcrumbs = {
