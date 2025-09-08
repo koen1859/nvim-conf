@@ -39,7 +39,7 @@
       };
     };
 
-    tabline.nvimBufferline.enable = true;
+    tabline.nvimBufferline.enable = false;
 
     statusline.lualine = {
       enable = true;
