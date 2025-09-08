@@ -31,21 +31,23 @@
       ];
       changeToDir = false;
     };
-    filetree.neo-tree.enable = true;
+
     notify = {
       nvim-notify = {
         enable = true;
         setupOpts.background_colour = "#000000";
       };
     };
+
     tabline.nvimBufferline.enable = true;
-    treesitter.context.enable = true;
+
     statusline.lualine = {
       enable = true;
       theme = "gruvbox";
     };
 
     telescope.enable = true;
+
     visuals = {
       nvim-web-devicons.enable = true;
       nvim-cursorline.enable = true;
@@ -55,6 +57,7 @@
       indent-blankline.enable = true;
       rainbow-delimiters.enable = true;
     };
+
     ui = {
       noice.enable = true;
       colorizer.enable = true;

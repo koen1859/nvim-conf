@@ -18,6 +18,7 @@
       smartcase = true;
       winborder = "rounded";
     };
+
     globals.maplocalleader = "\\";
 
     clipboard = {
@@ -36,7 +37,9 @@
       whichKey.enable = true;
       cheatsheet.enable = true;
     };
+
     git.enable = true;
+
     utility = {
       oil-nvim.enable = true;
       surround.enable = true;

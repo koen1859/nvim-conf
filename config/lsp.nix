@@ -6,6 +6,7 @@
   vim = {
     snippets.luasnip.enable = true;
     autocomplete.blink-cmp.enable = true;
+    treesitter.context.enable = true;
     lsp = {
       enable = true;
       formatOnSave = true;
