@@ -5,13 +5,13 @@
 }: {
   vim = {
     snippets.luasnip.enable = true;
-    autocomplete.nvim-cmp.enable = true;
+    autocomplete.blink-cmp.enable = true;
     lsp = {
       enable = true;
       formatOnSave = true;
       trouble.enable = true;
       lspkind.enable = true;
-      lspSignature.enable = true;
+      lspSignature.enable = false;
       servers = {
         ltex_ls = {
           enable = true;
@@ -70,14 +70,18 @@
           cmd = [(lib.getExe pkgs.phpactor) "language-server"];
           filetypes = ["php"];
         };
+        lua_ls = {
+          enable = true;
+          cmd = [(lib.getExe pkgs.lua-language-server)];
+          filetypes = ["lua"];
+        };
       };
     };
 
     diagnostics = {
       enable = true;
       config = {
-        virtual_lines.enable = true;
-        underline = true;
+        virtual_text.enable = true;
       };
     };
 
@@ -95,10 +99,7 @@
       python = {
         enable = true;
         lsp.enable = false;
-        format = {
-          enable = false;
-          type = "ruff";
-        };
+        format.enable = false;
       };
       r = {
         enable = true;
@@ -112,7 +113,10 @@
         enable = true;
         lsp.enable = false;
       };
-      lua.enable = true;
+      lua = {
+        enable = true;
+        lsp.enable = false;
+      };
       typst = {
         enable = true;
         lsp.enable = false;
