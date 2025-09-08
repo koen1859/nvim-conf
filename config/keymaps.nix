@@ -123,12 +123,6 @@
       }
       {
         mode = "n";
-        key = "<leader>fe";
-        action = "<cmd>:Neotree toggle<CR>";
-        desc = "Toggle Neo Tree";
-      }
-      {
-        mode = "n";
         key = "-";
         action = "<cmd>:Oil<CR>";
         desc = "Oil";
@@ -252,6 +246,12 @@
         mode = ["n"];
         action = "<cmd>DBUIToggle<cr>";
         desc = "Toggle DB UI";
+      }
+      {
+        key = "<leader>z";
+        mode = ["n"];
+        action = "<cmd>ZenMode<cr>";
+        desc = "Toggle Zen mode";
       }
     ];
   };

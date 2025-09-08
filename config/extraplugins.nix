@@ -9,6 +9,7 @@
       vim-dadbod
       vim-dadbod-ui
       vim-dadbod-completion
+      zen-mode-nvim
     ];
     extraPlugins = {
       compiler = {
