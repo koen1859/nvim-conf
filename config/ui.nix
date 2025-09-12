@@ -7,7 +7,7 @@
       transparent = true;
     };
     dashboard.startify = {
-      enable = true;
+      enable = false;
       customHeader = [
         "      ███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗"
         "      ████╗  ██║██╔════╝██╔═══██╗██║   ██║██║████╗ ████║"
@@ -34,7 +34,7 @@
 
     notify = {
       nvim-notify = {
-        enable = true;
+        enable = false;
         setupOpts.background_colour = "#000000";
       };
     };
@@ -51,11 +51,8 @@
     visuals = {
       nvim-web-devicons.enable = true;
       nvim-cursorline.enable = true;
-      cinnamon-nvim.enable = true;
-      fidget-nvim.enable = true;
       highlight-undo.enable = true;
       indent-blankline.enable = true;
-      rainbow-delimiters.enable = true;
     };
 
     ui = {
@@ -69,7 +66,7 @@
       smartcolumn = {
         enable = true;
       };
-      fastaction.enable = true;
+      fastaction.enable = false;
     };
   };
 }

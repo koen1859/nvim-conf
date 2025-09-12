@@ -10,7 +10,7 @@
     lsp = {
       enable = true;
       formatOnSave = true;
-      trouble.enable = true;
+      trouble.enable = false;
       lspkind.enable = true;
       lspSignature.enable = true;
       servers = {
@@ -44,11 +44,11 @@
           cmd = [(lib.getExe pkgs.sqls)];
           filetypes = ["sql"];
         };
-        # ty = {
-        #   enable = true;
-        #   cmd = [(lib.getExe pkgs.ty) "server"];
-        #   filetypes = ["python"];
-        # };
+        ty = {
+          enable = true;
+          cmd = [(lib.getExe pkgs.ty) "server"];
+          filetypes = ["python"];
+        };
         r_language_server = {
           enable = true;
           cmd = [

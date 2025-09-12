@@ -44,9 +44,6 @@
       oil-nvim.enable = true;
       surround.enable = true;
       diffview-nvim.enable = true;
-      images = {
-        image-nvim.enable = false;
-      };
     };
   };
 }

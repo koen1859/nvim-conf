@@ -277,6 +277,12 @@
         action = "<cmd>close<cr>";
         desc = "Close current split";
       }
+      {
+        key = "<leader>cs";
+        mode = ["n"];
+        action = "<cmd>CsvViewToggle<cr>";
+        desc = "Toggle CSV view";
+      }
     ];
   };
 }
