@@ -6,7 +6,7 @@
   vim = {
     snippets.luasnip.enable = true;
     autocomplete.nvim-cmp.enable = true;
-    treesitter.context.enable = true;
+    treesitter.context.enable = false;
     lsp = {
       enable = true;
       formatOnSave = true;
