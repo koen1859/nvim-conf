@@ -126,6 +126,7 @@
         enable = true;
         lsp.enable = false;
       };
+      html.enable = true;
     };
   };
 }
