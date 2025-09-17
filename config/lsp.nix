@@ -127,6 +127,7 @@
         lsp.enable = false;
       };
       html.enable = true;
+      clang.enable = true;
     };
   };
 }
