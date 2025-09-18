@@ -200,12 +200,6 @@
         desc = "LazyGit";
       }
       {
-        key = "<C-Enter>";
-        mode = ["n"];
-        action = "<cmd>CompilerOpen<cr>";
-        desc = "Compiler Open ";
-      }
-      {
         key = "<leader><BS>";
         mode = ["n"];
         action = "<cmd>CompilerToggleResults<cr>";
@@ -214,8 +208,8 @@
       {
         key = "<leader>r";
         mode = ["n"];
-        action = "<cmd>CompilerRedo<cr>";
-        desc = "Compiler Redo";
+        action = "<cmd>CompilerOpen<cr>";
+        desc = "Compiler Open";
       }
       {
         key = "<leader>tp";

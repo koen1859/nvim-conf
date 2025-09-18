@@ -7,7 +7,7 @@
       transparent = true;
     };
     dashboard.startify = {
-      enable = false;
+      enable = true;
       customHeader = [
         "      ███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗"
         "      ████╗  ██║██╔════╝██╔═══██╗██║   ██║██║████╗ ████║"
