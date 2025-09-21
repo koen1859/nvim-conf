@@ -10,7 +10,7 @@
     lsp = {
       enable = true;
       formatOnSave = true;
-      trouble.enable = false;
+      trouble.enable = true;
       lspkind.enable = true;
       lspSignature.enable = true;
       servers = {
