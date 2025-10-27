@@ -80,7 +80,7 @@
     };
 
     diagnostics = {
-      enable = true;
+      enable = false;
       config = {
         virtual_text.enable = true;
       };
