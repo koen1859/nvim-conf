@@ -4,6 +4,7 @@
   ...
 }: {
   vim = {
+    visuals.fidget-nvim.enable = true;
     snippets.luasnip.enable = true;
     autocomplete.nvim-cmp.enable = true;
     treesitter.context.enable = false;
