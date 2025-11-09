@@ -7,6 +7,7 @@
       vim-dadbod
       vim-dadbod-ui
       vim-dadbod-completion
+      everforest
     ];
     extraPlugins = {
       tiny-inline-diagnostic = {

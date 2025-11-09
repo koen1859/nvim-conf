@@ -2,8 +2,6 @@
   vim = {
     theme = {
       enable = true;
-      name = "nord";
-      # style = "dark";
       transparent = true;
     };
     dashboard.startify = {
@@ -43,7 +41,7 @@
 
     statusline.lualine = {
       enable = true;
-      theme = "gruvbox";
+      theme = "everforest";
     };
 
     telescope.enable = true;
