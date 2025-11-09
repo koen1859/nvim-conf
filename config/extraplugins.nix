@@ -7,9 +7,16 @@
       vim-dadbod
       vim-dadbod-ui
       vim-dadbod-completion
-      everforest
     ];
     extraPlugins = {
+      everforest = {
+        package = pkgs.vimPlugins.everforest;
+        setup = ''
+          vim.g.everforest_background = "hard"
+          vim.g.everforest_transparent_background = "1"
+          vim.cmd.colorscheme("everforest")
+        '';
+      };
       tiny-inline-diagnostic = {
         package = pkgs.vimPlugins.tiny-inline-diagnostic-nvim;
         setup = ''
