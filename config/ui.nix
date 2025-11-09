@@ -2,8 +2,8 @@
   vim = {
     theme = {
       enable = true;
-      name = "gruvbox";
-      style = "dark";
+      name = "nord";
+      # style = "dark";
       transparent = true;
     };
     dashboard.startify = {
