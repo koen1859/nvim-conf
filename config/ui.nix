@@ -37,7 +37,7 @@
 
     statusline.lualine = {
       enable = true;
-      theme = "everforest";
+      theme = "gruvbox";
     };
 
     telescope.enable = true;
