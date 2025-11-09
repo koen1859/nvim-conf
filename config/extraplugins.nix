@@ -13,7 +13,7 @@
         package = pkgs.vimPlugins.everforest;
         setup = ''
           vim.g.everforest_background = "hard"
-          vim.g.everforest_transparent_background = "1"
+          vim.g.everforest_transparent_background = "0"
           vim.cmd.colorscheme("everforest")
         '';
       };

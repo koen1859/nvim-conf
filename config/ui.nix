@@ -1,9 +1,5 @@
 {
   vim = {
-    theme = {
-      enable = true;
-      transparent = true;
-    };
     dashboard.startify = {
       enable = true;
       customHeader = [
