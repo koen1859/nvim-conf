@@ -12,9 +12,28 @@
       gruvbox = {
         package = pkgs.vimPlugins.gruvbox;
         setup = ''
-          vim.g.gruvbox_italic = "1";
-          vim.g.gruvbox_contrast_dark = "hard";
-          vim.cmd.colorscheme("gruvbox")
+          require("gruvbox").setup({
+            terminal_colors = true,
+            undercurl = true,
+            underline = true,
+            bold = true,
+            italic = {
+              strings = true,
+              emphasis = true,
+              comments = true,
+              operators = false,
+              folds = true,
+            },
+            strikethrough = true,
+            invert_selection = false,
+            invert_signs = false,
+            invert_tabline = false,
+            inverse = true,
+            contrast = "hard",
+            dim_inactive = false,
+            transparent_mode = false,
+          })
+          vim.cmd("colorscheme gruvbox")
         '';
       };
       # everforest = {
