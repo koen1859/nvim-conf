@@ -10,7 +10,7 @@
     ];
     extraPlugins = {
       gruvbox = {
-        package = pkgs.vimPlugins.gruvbox;
+        package = pkgs.vimPlugins.gruvbox-nvim;
         setup = ''
           require("gruvbox").setup({
             terminal_colors = true,
