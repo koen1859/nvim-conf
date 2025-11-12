@@ -5,5 +5,6 @@
     ./lsp.nix
     ./ui.nix
     ./extraplugins.nix
+    ./autocmds.nix
   ];
 }
