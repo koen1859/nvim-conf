@@ -7,6 +7,7 @@
       vim-dadbod
       vim-dadbod-ui
       vim-dadbod-completion
+      zen-mode-nvim
     ];
     extraPlugins = {
       tiny-inline-diagnostic = {
