@@ -1,11 +1,5 @@
 {
   vim = {
-    theme = {
-      enable = true;
-      name = "gruvbox";
-      style = "dark";
-      transparent = true;
-    };
     dashboard.startify = {
       enable = true;
       customHeader = [
