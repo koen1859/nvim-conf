@@ -6,14 +6,17 @@
   vim = {
     visuals.fidget-nvim.enable = true;
     snippets.luasnip.enable = true;
-    autocomplete.nvim-cmp.enable = true;
+    autocomplete.blink-cmp = {
+      enable = true;
+      setupOpts.signature.enabled = true;
+    };
     treesitter.context.enable = false;
     lsp = {
       enable = true;
       formatOnSave = true;
       trouble.enable = true;
       lspkind.enable = true;
-      lspSignature.enable = true;
+      lspSignature.enable = false;
       servers = {
         ltex_ls = {
           enable = true;
