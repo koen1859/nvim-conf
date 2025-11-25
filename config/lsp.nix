@@ -9,6 +9,7 @@
     autocomplete.blink-cmp = {
       enable = true;
       setupOpts.signature.enabled = true;
+      friendly-snippets.enable = true;
     };
     treesitter.context.enable = false;
     lsp = {
