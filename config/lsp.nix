@@ -126,6 +126,10 @@
       typst = {
         enable = true;
         lsp.enable = false;
+        format = {
+          enable = true;
+          type = "typstyle";
+        };
       };
       sql = {
         enable = true;
