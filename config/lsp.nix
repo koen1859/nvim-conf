@@ -83,7 +83,7 @@
         };
         clang = {
           enable = true;
-          cmd = ["clangd"];
+          cmd = ["${pkgs.clang-tools}/bin/clangd"];
           filetypes = ["c" "cpp" "h" "hpp"];
         };
       };
