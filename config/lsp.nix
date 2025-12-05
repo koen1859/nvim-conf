@@ -81,6 +81,11 @@
           cmd = [(lib.getExe pkgs.lua-language-server)];
           filetypes = ["lua"];
         };
+        clang = {
+          enable = true;
+          cmd = ["${pkgs.llvmPackages_latest.clang-tools}/bin/clangd"];
+          filetypes = ["c" "cpp" "h" "hpp"];
+        };
       };
     };
 
@@ -136,7 +141,10 @@
         lsp.enable = false;
       };
       html.enable = true;
-      clang.enable = true;
+      clang = {
+        enable = true;
+        lsp.enable = false;
+      };
     };
   };
 }
