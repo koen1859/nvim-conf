@@ -6,5 +6,6 @@
     ./ui.nix
     ./extraplugins.nix
     ./autocmds.nix
+    ./assistant.nix
   ];
 }
