@@ -50,6 +50,15 @@
     };
 
     ui = {
+      borders = {
+        enable = true;
+        plugins = {
+          nvim-cmp.enable = true;
+          fastaction.enable = true;
+          lsp-signature.enable = true;
+          which-key.enable = true;
+        };
+      };
       noice.enable = false;
       colorizer.enable = true;
       illuminate.enable = true;

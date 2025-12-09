@@ -6,10 +6,15 @@
   vim = {
     visuals.fidget-nvim.enable = true;
     snippets.luasnip.enable = true;
-    autocomplete.blink-cmp = {
-      enable = true;
-      setupOpts.signature.enabled = true;
-      friendly-snippets.enable = true;
+    autocomplete = {
+      blink-cmp = {
+        enable = false;
+        setupOpts.signature.enabled = true;
+        friendly-snippets.enable = true;
+      };
+      nvim-cmp = {
+        enable = true;
+      };
     };
     treesitter.context.enable = false;
     lsp = {
@@ -88,14 +93,12 @@
         };
       };
     };
-
     diagnostics = {
       enable = false;
       config = {
         virtual_text.enable = true;
       };
     };
-
     languages = {
       enableFormat = true;
       enableTreesitter = true;
@@ -116,7 +119,7 @@
         enable = true;
         lsp.enable = false;
         format = {
-          enable = true;
+          enable = false;
           type = "styler";
         };
       };
