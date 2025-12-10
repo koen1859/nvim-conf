@@ -29,7 +29,7 @@
     spellcheck = {
       enable = true;
       languages = ["en"];
-      # programmingWordlist.enable = true;
+      programmingWordlist.enable = false;
     };
 
     autopairs.nvim-autopairs.enable = true;

@@ -8,8 +8,20 @@
       vim-dadbod-ui
       vim-dadbod-completion
       zen-mode-nvim
+      lazygit-nvim
+      quarto-nvim
+      jupytext-nvim
     ];
     extraPlugins = {
+      # vim-slime = {
+      #   package = pkgs.vimPlugins.vim-slime;
+      #   setup = ''
+      #     vim.g.slime_target = "neovim"
+      #     vim.g.slime_default_config = {
+      #       terminal_id = 1,
+      #     }
+      #   '';
+      # };
       gruvbox = {
         package = pkgs.vimPlugins.gruvbox-nvim;
         setup = ''
