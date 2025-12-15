@@ -17,6 +17,7 @@
       highlight-undo.enable = true;
       indent-blankline.enable = true;
     };
+    mini.tabline.enable = true;
     startPlugins = with pkgs.vimPlugins; [
       vimtex
       undotree
@@ -28,8 +29,18 @@
       lazygit-nvim
       quarto-nvim
       jupytext-nvim
+      vim-unicoder
+      vim-wordy
+      typst-vim
+      typst-preview-nvim
+      neocord
+      CopilotChat-nvim
     ];
     extraPlugins = {
+      scrollbar = {
+        package = pkgs.vimPlugins.nvim-scrollbar;
+        setup = "require('scrollbar').setup {}";
+      };
       compiler = {
         package = pkgs.vimPlugins.compiler-nvim;
         setup = "require('compiler').setup {}";

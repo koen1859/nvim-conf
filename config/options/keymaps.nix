@@ -259,6 +259,12 @@
         action = "<cmd>CsvViewToggle<cr>";
         desc = "Toggle CSV view";
       }
+      {
+        key = "<leader>cc";
+        mode = ["n"];
+        action = "<cmd>CopilotChatToggle<cr>";
+        desc = "Toggle Copilot Chat";
+      }
     ];
   };
 }

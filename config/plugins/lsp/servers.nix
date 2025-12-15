@@ -8,7 +8,7 @@
     formatOnSave = true;
     trouble.enable = true;
     lspkind.enable = true;
-    lspSignature.enable = false;
+    lspSignature.enable = true;
     servers = {
       ltex_ls = {
         enable = true;
