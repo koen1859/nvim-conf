@@ -24,10 +24,10 @@
         pattern = ["*.Rmd" "*.rmd"];
         callback = lib.generators.mkLuaInline ''
           function()
-            vim.treesitter.stop()
-            vim.treesitter.start()
+            vim.cmd("syntax sync fromstart")
           end
         '';
+        desc = "Restart highlighting in R Markdown files after saving";
       }
       {
         event = ["FileType"];
