@@ -20,6 +20,16 @@
     ];
     autocmds = [
       {
+        event = ["BufWritePost"];
+        pattern = ["*.Rmd" "*.rmd"];
+        callback = lib.generators.mkLuaInline ''
+          function()
+            vim.treesitter.stop()
+            vim.treesitter.start()
+          end
+        '';
+      }
+      {
         event = ["FileType"];
         pattern = ["help"];
         command = "wincmd L";
