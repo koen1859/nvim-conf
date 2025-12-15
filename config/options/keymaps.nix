@@ -123,12 +123,6 @@
       }
       {
         mode = "n";
-        key = "-";
-        action = "<cmd>:Oil<CR>";
-        desc = "Oil";
-      }
-      {
-        mode = "n";
         key = "<leader>a";
         action = "<cmd> lua require'harpoon':list():add()<CR>";
         desc = "Add Buffer to Harpoon";
@@ -194,12 +188,6 @@
         desc = "LSP Incoming Calls";
       }
       {
-        key = "<leader>lg";
-        mode = ["n"];
-        action = "<cmd>LazyGit<cr>";
-        desc = "LazyGit";
-      }
-      {
         key = "<leader><BS>";
         mode = ["n"];
         action = "<cmd>CompilerToggleResults<cr>";
@@ -222,12 +210,6 @@
         mode = ["n"];
         action = "<cmd>lua _R_TOGGLE()<cr>";
         desc = "Open R terminal";
-      }
-      {
-        key = "<leader><CR>";
-        mode = ["n"];
-        action = "<cmd>ToggleTermSendCurrentLine<cr><cr>";
-        desc = "Send current line to terminal";
       }
       {
         key = "<cr>";

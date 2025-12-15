@@ -18,32 +18,15 @@
       smartcase = true;
       cursorline = true;
     };
-
     globals.maplocalleader = "\\";
-
     clipboard = {
       enable = true;
       registers = "unnamed";
     };
-
     spellcheck = {
       enable = true;
       languages = ["en"];
       programmingWordlist.enable = false;
-    };
-
-    autopairs.nvim-autopairs.enable = true;
-    binds = {
-      whichKey.enable = true;
-      cheatsheet.enable = true;
-    };
-
-    git.enable = true;
-
-    utility = {
-      oil-nvim.enable = true;
-      surround.enable = true;
-      diffview-nvim.enable = true;
     };
   };
 }
