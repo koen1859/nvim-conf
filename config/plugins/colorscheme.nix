@@ -1,5 +1,29 @@
 {pkgs, ...}: {
   vim.extraPlugins = {
+    gruvbox-material = {
+      package = pkgs.vimPlugins.gruvbox-material-nvim;
+      setup = ''
+        require('gruvbox-material').setup({
+          italics = true,
+          contrast = "hard",
+          comments = {
+            italics = true,
+          },
+          background = {
+            transparent = false,
+          },
+          float = {
+            force_background = false,
+            background_color = nil,
+          },
+          signs = {
+            force_background = false,
+            background_color = nil,
+          },
+          customize = nil,
+        })
+      '';
+    };
     gruvbox = {
       package = pkgs.vimPlugins.gruvbox-nvim;
       setup = ''
