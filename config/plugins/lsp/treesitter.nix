@@ -4,6 +4,7 @@
     fold = true;
     grammars = with pkgs.vimPlugins.nvim-treesitter.builtGrammars; [
       r
+      rnoweb
       python
       nix
       php
