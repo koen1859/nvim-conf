@@ -36,10 +36,10 @@
       CopilotChat-nvim
     ];
     extraPlugins = {
-      precognition = {
-        package = pkgs.vimPlugins.precognition-nvim;
-        setup = "require('precognition').setup {}";
-      };
+      # precognition = {
+      #   package = pkgs.vimPlugins.precognition-nvim;
+      #   setup = "require('precognition').setup {}";
+      # };
       jupytext-nvim = {
         package = pkgs.vimPlugins.jupytext-nvim;
         setup = ''
