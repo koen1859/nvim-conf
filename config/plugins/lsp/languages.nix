@@ -7,7 +7,7 @@
       lsp.enable = false;
       format = {
         enable = true;
-        type = "alejandra";
+        type = ["alejandra"];
       };
     };
     typst = {
@@ -15,7 +15,7 @@
       lsp.enable = false;
       format = {
         enable = true;
-        type = "typstyle";
+        type = ["typstyle"];
       };
     };
   };
