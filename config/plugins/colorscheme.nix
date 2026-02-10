@@ -10,7 +10,7 @@
     #         italics = true,
     #       },
     #       background = {
-    #         transparent = true,
+    #         transparent = false,
     #       },
     #       float = {
     #         force_background = false,
@@ -46,7 +46,7 @@
           inverse = true,
           contrast = "hard",
           dim_inactive = false,
-          transparent_mode = true,
+          transparent_mode = false,
         })
         vim.cmd("colorscheme gruvbox")
       '';
