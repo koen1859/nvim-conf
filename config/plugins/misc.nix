@@ -35,6 +35,28 @@
       neocord
       CopilotChat-nvim
     ];
+    extraPackages = with pkgs; [
+      (texliveFull.withPackages
+        (ps:
+          with ps; [
+            latexmk
+            amsmath
+            marvosym
+            bbm-macros
+            minted
+            texcount
+            tocbibind
+            latexindent
+            adjustbox
+            algpseudocodex
+            algorithmicx
+            algorithms
+            fifo-stack
+            varwidth
+            tabto-ltx
+            totcount
+          ]))
+    ];
     extraPlugins = {
       jupytext-nvim = {
         package = pkgs.vimPlugins.jupytext-nvim;
