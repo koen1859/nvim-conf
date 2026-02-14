@@ -11,6 +11,13 @@
       surround.enable = true;
       diffview-nvim.enable = true;
     };
+    filetree.nvimTree = {
+      enable = true;
+      mappings = {
+        toggle = "<leader>fe";
+      };
+      openOnSetup = false;
+    };
     visuals = {
       nvim-web-devicons.enable = true;
       nvim-cursorline.enable = true;
