@@ -72,7 +72,7 @@
         cmd = [(lib.getExe pkgs.lua-language-server)];
         filetypes = ["lua"];
       };
-      clang = {
+      clangd = {
         enable = true;
         cmd = ["${pkgs.clang-tools}/bin/clangd"];
         filetypes = ["c" "cpp" "h" "hpp"];
