@@ -77,6 +77,11 @@
         cmd = ["${pkgs.clang-tools}/bin/clangd"];
         filetypes = ["c" "cpp" "h" "hpp"];
       };
+      rust-analyzer = {
+        enable = true;
+        cmd = [(lib.getExe pkgs.rust-analyzer)];
+        filetypes = ["rust" "rs"];
+      };
     };
   };
 }
