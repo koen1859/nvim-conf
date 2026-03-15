@@ -26,7 +26,7 @@
         filetypes = ["nix"];
       };
       pyright = {
-        enable = true;
+        enable = false;
         cmd = ["${pkgs.pyright}/bin/pyright-langserver" "--stdio"];
         filetypes = ["python"];
       };
@@ -41,7 +41,7 @@
         filetypes = ["sql"];
       };
       ty = {
-        enable = false;
+        enable = true;
         cmd = [(lib.getExe pkgs.ty) "server"];
         filetypes = ["python"];
       };
