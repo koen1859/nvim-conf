@@ -2,6 +2,26 @@
   vim = {
     keymaps = [
       {
+        key = "<leader>w";
+        mode = "n";
+        action = ":set invwrap<CR>";
+        desc = "Toggle wrapping of text";
+      }
+      {
+        key = "j";
+        mode = "n";
+        action = "v:count == 0 ? 'gj' : 'j'";
+        expr = true;
+        desc = "Down (wrap-aware)";
+      }
+      {
+        key = "k";
+        mode = "n";
+        action = "v:count == 0 ? 'gk' : 'k'";
+        expr = true;
+        desc = "Up (wrap-aware)";
+      }
+      {
         key = "<Up>";
         mode = ["n"];
         action = ":resize -2<CR>";
