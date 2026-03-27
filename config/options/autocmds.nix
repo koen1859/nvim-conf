@@ -17,6 +17,10 @@
         name = "active_cursorline";
         clear = true;
       }
+      {
+        name = "wrap_text";
+        clear = true;
+      }
     ];
     autocmds = [
       {
@@ -103,6 +107,18 @@
         callback = lib.mkLuaInline ''
           function()
             vim.opt_local.cursorline = false
+          end
+        '';
+      }
+      {
+        event = ["FileType"];
+        group = "wrap_text";
+        pattern = ["markdown" "text" "tex"];
+        callback = lib.mkLuaInline ''
+          function()
+            vim.opt_local.wrap = true
+            vim.opt_local.linebreak = true
+            vim.opt_local.spell = true
           end
         '';
       }
