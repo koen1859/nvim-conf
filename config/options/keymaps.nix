@@ -238,7 +238,7 @@
         desc = "Send visual selection to terminal";
       }
       {
-        key = "<leader>db";
+        key = "<leader>fdb";
         mode = ["n"];
         action = "<cmd>DBUIToggle<cr>";
         desc = "Toggle DB UI";

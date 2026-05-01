@@ -3,6 +3,7 @@
     ./lsp
     ./colorscheme.nix
     ./copilot.nix
+    ./debugger.nix
     ./lualine.nix
     ./misc.nix
     ./notify.nix
