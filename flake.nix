@@ -20,7 +20,13 @@
     eachSystem = nixpkgs.lib.genAttrs (import systems);
   in {
     packages = eachSystem (system: let
-      pkgs = nixpkgs.legacyPackages.${system};
+      pkgs = import nixpkgs {
+        inherit system;
+        config.allowUnfreePredicate = pkg:
+          builtins.elem (pkgs.lib.getName pkg) [
+            "jupytext-nvim"
+          ];
+      };
     in {
       default =
         (nvf.lib.neovimConfiguration {
