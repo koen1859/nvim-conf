@@ -65,16 +65,16 @@
           ]))
     ];
     extraPlugins = {
-      jupytext-nvim = {
-        package = pkgs.vimPlugins.jupytext-nvim;
-        setup = ''
-          require('jupytext').setup {
-            style = "hydrogen",
-            output_extension = "py",
-            force_ft = "python",
-          }
-        '';
-      };
+      # jupytext-nvim = {
+      #   package = pkgs.vimPlugins.jupytext-nvim;
+      #   setup = ''
+      #     require('jupytext').setup {
+      #       style = "hydrogen",
+      #       output_extension = "py",
+      #       force_ft = "python",
+      #     }
+      #   '';
+      # };
       scrollbar = {
         package = pkgs.vimPlugins.nvim-scrollbar;
         setup = "require('scrollbar').setup {}";
