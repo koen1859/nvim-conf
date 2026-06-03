@@ -41,8 +41,10 @@
       typst-preview-nvim
       neocord
       CopilotChat-nvim
+      texpresso-vim
     ];
     extraPackages = with pkgs; [
+      texpresso
       (texliveFull.withPackages
         (ps:
           with ps; [
