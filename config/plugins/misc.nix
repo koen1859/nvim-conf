@@ -42,6 +42,8 @@
       neocord
       CopilotChat-nvim
       texpresso-vim
+      markdown-nvim
+      markdown-preview-nvim
     ];
     extraPackages = with pkgs; [
       texpresso
