@@ -2,6 +2,24 @@
   vim = {
     keymaps = [
       {
+        key = "<leader>rt";
+        mode = "n";
+        action = ":!cargo test %:t:r -- --nocapture<CR>";
+        desc = "Run tests on current file";
+      }
+      {
+        key = "<leader>rd";
+        mode = "n";
+        action = ":!cargo run<CR>";
+        desc = "Run project on debug mode";
+      }
+      {
+        key = "<leader>rr";
+        mode = "n";
+        action = ":!cargo run --release<CR>";
+        desc = "Run project on release mode";
+      }
+      {
         key = "<leader>w";
         mode = "n";
         action = ":set invwrap<CR>";
@@ -91,7 +109,7 @@
         key = "<Tab>";
         mode = ["n"];
         action = ":bnext<CR>";
-        desc = "Nexr Buffer";
+        desc = "Next Buffer";
       }
       {
         key = "<S-Tab>";
@@ -214,7 +232,7 @@
         desc = "Compiler Toggle Results";
       }
       {
-        key = "<leader>r";
+        key = "<leader>ro";
         mode = ["n"];
         action = "<cmd>CompilerOpen<cr>";
         desc = "Compiler Open";
